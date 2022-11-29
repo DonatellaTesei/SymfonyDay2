@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<!--...do I insert here all information or just what I do not display in the home?-->
+	<p>{{ trips.departure | date("d. m. Y")}}</p>
+	<!--.. error with the data conversion to string!-->
+	<p>{{ trips.end | date("D. M. Y")}}</p>
+	<p>{{ trips.transportation }}</p>
+	<p>{{ trips.price }}</p>
+	<a href="/">
+		Back
+	</a>
+{% endblock %}
